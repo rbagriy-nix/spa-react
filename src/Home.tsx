@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     margin: "auto",
   },
   media: {
-    height: 250,
+    height: 300,
   },
   cardActions: {
     justifyContent: "space-around",
@@ -39,7 +39,7 @@ export default function MediaCard() {
               React + Single-SPA
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              It's a simply example for React-Router and dammy components
+              It's a simply example for React-Router and dummy components
             </Typography>
           </CardContent>
         </CardActionArea>
