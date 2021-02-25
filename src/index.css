@@ -144,8 +144,7 @@ ol li {
   }
 }
 
-
-.dFlex{
+.dFlex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,12 +155,12 @@ ol li {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 30px 50px 20px 50px;
+  padding: 0px 40px 0px 40px;
   box-sizing: border-box;
   background-color: #272b34;
 }
 
-.rNav{
+.rNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,7 +172,6 @@ ol li {
   font-size: 30px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
-
 }
 
 .rNav ul {
@@ -185,8 +183,8 @@ ol li {
   list-style-type: none;
 }
 
-.rNav ul li{
- font-size: 14px;
+.rNav ul li {
+  font-size: 14px;
   margin-left: 15px;
   padding: 10px;
   box-sizing: border-box;
@@ -202,7 +200,7 @@ ol li {
   cursor: pointer;
 }
 
-.rNav .search .fa +.fa {
+.rNav .search .fa + .fa {
   margin-left: 15px;
 }
 
@@ -211,10 +209,10 @@ ol li {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 70%;
+  width: 100%;
   height: 100%;
-  margin: 50px auto;
-  padding: 50px 0 0 ;
+  margin: 15px auto;
+  padding: 25px 0 0;
   box-sizing: border-box;
   flex-wrap: wrap;
 }
@@ -227,7 +225,7 @@ ol li {
   font-size: 10.5vw;
 }
 
-.main_content .rCard{
+.main_content .rCard {
   width: 300px;
   border-radius: 15px;
   display: flex;
@@ -235,12 +233,12 @@ ol li {
   align-items: center;
   flex-direction: column;
   position: relative;
-  transform: scale(.8);
-  transition: all .3s ease-in-out;
-  margin-bottom: 50px;
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 35px;
 }
 
-.main_content .rCard .card_img{
+.main_content .rCard .card_img {
   margin-top: -5vw;
 }
 
@@ -248,13 +246,12 @@ ol li {
   width: 200px;
 }
 
-.main_content .card_header{
+.main_content .card_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   color: #fff;
-  margin: 25px 0;
 }
 
 .main_content .card_header h2 {
@@ -302,7 +299,7 @@ ol li {
   align-items: center;
   cursor: pointer;
   position: relative;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
   overflow: hidden;
 }
 
@@ -312,8 +309,9 @@ ol li {
   align-items: center;
   width: 100%;
   margin-top: auto;
-  color: rgba(255,255,255, .3);
+  color: rgba(255, 255, 255, 0.3);
   font-size: 12px;
+  padding-bottom: 10px;
 }
 
 .rFooter .rSocial {
@@ -326,12 +324,12 @@ ol li {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  border: 1px solid rgba(255,255,255, .3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  color: rgba(255,255,255, .3);
+  color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
