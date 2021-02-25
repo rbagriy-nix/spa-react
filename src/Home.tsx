@@ -13,7 +13,6 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 400,
     margin: "auto",
-    marginTop: 225,
   },
   media: {
     height: 250,
@@ -27,42 +26,44 @@ export default function MediaCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2" align="center">
-            React + Single-SPA
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            It's a simply example for React-Router and dammy components
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions className={classes.cardActions}>
-        <Button
-          variant="contained"
-          size="medium"
-          component={Link}
-          to="/react/todo"
-          color="primary"
-        >
-          Todo List
-        </Button>
-        <Button
-          variant="contained"
-          size="medium"
-          color="secondary"
-          component={Link}
-          to="/react/shop"
-        >
-          Product List
-        </Button>
-      </CardActions>
-    </Card>
+    <div className="main_div">
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2" align="center">
+              React + Single-SPA
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              It's a simply example for React-Router and dammy components
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions className={classes.cardActions}>
+          <Button
+            variant="contained"
+            size="medium"
+            component={Link}
+            to="/react/todo"
+            color="primary"
+          >
+            Todo List
+          </Button>
+          <Button
+            variant="contained"
+            size="medium"
+            color="secondary"
+            component={Link}
+            to="/react/shop"
+          >
+            Product List
+          </Button>
+        </CardActions>
+      </Card>
+    </div>
   );
 }
