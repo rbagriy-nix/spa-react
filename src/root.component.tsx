@@ -5,18 +5,16 @@ import Todo from "./TodoList";
 import "./index.css";
 import Shop from "./components/Shop";
 
+const routes = [
+    { path: '/react', exact: true, component: Home },
+    { path: '/react/todo', component: Todo },
+    { path: '/react/shop', component: Shop }
+]
+
 export default function Root() {
   return (
     <Router>
-      <Route path="/react" exact>
-        <Home />
-      </Route>
-      <Route path="/react/todo">
-        <Todo />
-      </Route>
-    <Route path="/react/shop">
-        <Shop />
-    </Route>
+        { routes.map(route => <Route {...route} />) }
     </Router>
   );
 }
